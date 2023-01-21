@@ -1,18 +1,19 @@
 // import Layout from "../Views/Layout/Layout";
 // import { Outlet } from "react-router-dom";
 import { Navigate, useRoutes } from "react-router-dom";
-import { ChatBubble } from "../View/Pages";
+import Layout from "../View/Layouts/layout";
+import { Home } from "../View/Pages";
 
 
 const Routes = () => {
   const element = useRoutes([
     {
       path: "/",
-    //   element: <Layout />,
+      element: <Layout />,
       children: [
         {
           path: "/",
-          element: <ChatBubble />,
+          element: <Home />,
         }
       ],
     },

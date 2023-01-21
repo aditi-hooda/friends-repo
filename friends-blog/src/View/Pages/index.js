@@ -1,4 +1,4 @@
 import React from 'react';
-import ChatBubble from './ChatBubble/ChatBubble';
+import Home from './Home/Home';
 
-export {ChatBubble};
+export {Home};
